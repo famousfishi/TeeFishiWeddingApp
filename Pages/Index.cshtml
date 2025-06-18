@@ -10,63 +10,132 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oluwafisayomi & Tayelolu - ForeverAndTheDayAfter</title>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&family=Raleway:wght@300;500&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary: #6e4c36; /* Deep earth brown */
+            --secondary: #dac4aa; /* Light sand */
+            --accent: #a68b6d; /* Tan clay */
+            --text: #3b3b3b;
+            --background: #f9f4f0; /* Soft beige */
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
-            font-family: 'Open Sans', sans-serif;
-            background: #fff8f0;
-            color: #333;
+            font-family: 'Raleway', sans-serif;
+            background-color: var(--background);
+            color: var(--text);
         }
+
         header {
-            background: #b48b7d;
+            background: var(--primary);
             color: white;
-            padding: 2rem;
             text-align: center;
+            padding: 3rem 1rem;
         }
-        header h1 {
-            font-family: 'Great Vibes', cursive;
-            font-size: 3rem;
-            margin: 0;
-        }
+
+            header h1 {
+                font-family: 'Great Vibes', cursive;
+                font-size: 4rem;
+                margin: 0;
+            }
+
+            header p {
+                font-family: 'Playfair Display', serif;
+                font-size: 1.5rem;
+                letter-spacing: 2px;
+                margin-top: 0.5rem;
+            }
+
         nav {
-            background: #f4e3d7;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            gap: 2rem;
+            background: var(--secondary);
             padding: 1rem;
-        }
-        nav a {
-            text-decoration: none;
-            color: #b48b7d;
-            font-weight: bold;
-        }
-        section {
-            padding: 2rem;
-            max-width: 800px;
-            margin: auto;
-        }
-        h2 {
-            color: #b48b7d;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 1rem;
         }
-        .gallery img {
-            width: 100%;
-            border-radius: 10px;
+
+            nav a {
+                text-decoration: none;
+                color: var(--primary);
+                font-weight: 600;
+                font-size: 1rem;
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+                transition: background 0.3s;
+            }
+
+                nav a:hover {
+                    background: var(--accent);
+                    color: white;
+                }
+
+        section {
+            padding: 3rem 1.5rem;
+            max-width: 960px;
+            margin: auto;
         }
+
+        h2 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+            .gallery img {
+                width: 100%;
+                border-radius: 12px;
+                object-fit: cover;
+                height: 240px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+
         footer {
             text-align: center;
-            padding: 2rem;
-            background: #b48b7d;
+            background: var(--primary);
             color: white;
+            padding: 2rem;
             font-family: 'Great Vibes', cursive;
+            font-size: 1.3rem;
         }
+
         .hidden {
             display: none;
+        }
+
+        @@media (max-width: 600px) {
+            header h1
+
+        {
+            font-size: 2.8rem;
+        }
+
+        nav a {
+            font-size: 0.9rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
         }
     </style>
 </head>
@@ -84,27 +153,62 @@
 
     <section id="home">
         <h2>Welcome</h2>
-        <p>We’re so excited to celebrate our love with you. Mark your calendars for September 20 and 21, 2025!</p>
+        <p>
+            We are thrilled to invite you to witness and celebrate the union of two hearts, Oluwafisayomi and Tayelolu,
+            on the 20th and 21st of September, 2025. This website is a small glimpse into our love story, memories,
+            and the beautiful future we are about to step into. Thank you for being part of our journey.
+        </p>
+        <p>
+            This celebration is not just about one day but a lifetime of love, prayer, and companionship. From humble beginnings
+            to unforgettable memories, everything led us to this moment — and we want you to walk it with us.
+        </p>
     </section>
 
     <section id="story" class="hidden">
         <h2>How We Met</h2>
-        <p>Our story began with a spark and has grown into a flame that never fades. We met in the most unexpected way, yet it feels like destiny brought us together...</p>
+        <p>
+            Our journey started like a calm breeze, gradually becoming a steady wind of love and laughter. We met during
+            a youth leadership conference. Tayelolu, with her radiant smile and calm demeanor, immediately caught
+            Oluwafisayomi’s attention. A casual conversation turned into long calls, shared ideas, and mutual dreams.
+        </p>
+        <p>
+            Over months of friendship, trust grew. We learned about each other’s quirks, favorite foods, aspirations,
+            and silent fears. We built a bond on honesty, respect, and God’s grace. Our love grew naturally — like the
+            sun rising — never forced, always glowing.
+        </p>
+        <p>
+            From the very first “hello” to the moment he proposed, every chapter has been a testimony of divine timing
+            and intentional love. And now, a new chapter begins.
+        </p>
     </section>
 
     <section id="photos" class="hidden">
         <h2>Gallery</h2>
+        <p>A few precious snapshots of our time together:</p>
         <div class="gallery">
-            <img src="https://via.placeholder.com/200x200?text=Love1" alt="Love 1">
-            <img src="https://via.placeholder.com/200x200?text=Love2" alt="Love 2">
-            <img src="https://via.placeholder.com/200x200?text=Love3" alt="Love 3">
-            <img src="https://via.placeholder.com/200x200?text=Love4" alt="Love 4">
+            <img src="https://via.placeholder.com/400x400?text=Love+1" alt="Us in nature">
+            <img src="https://via.placeholder.com/400x400?text=Love+2" alt="Our goofy faces">
+            <img src="https://via.placeholder.com/400x400?text=Love+3" alt="Celebration day">
+            <img src="https://via.placeholder.com/400x400?text=Love+4" alt="Cute moment">
+            <img src="https://via.placeholder.com/400x400?text=Love+5" alt="Anniversary">
         </div>
     </section>
 
     <section id="journey" class="hidden">
         <h2>Our Journey Ahead</h2>
-        <p>As we step into this new chapter, we are full of dreams and faith. From building a home filled with laughter to traveling the world hand-in-hand, our journey is just beginning...</p>
+        <p>
+            As we prepare to step into marriage, we carry hopes, values, and unwavering faith. Our dreams include
+            building a home full of kindness and purpose, raising future leaders, and supporting each other in every
+            season life brings.
+        </p>
+        <p>
+            We plan to travel, serve our community, laugh uncontrollably, and grow old while holding hands. Our love
+            will not only survive the storms but dance in the rain with grace and prayer.
+        </p>
+        <p>
+            Thank you for sharing in this joyous beginning. Your presence in our lives is one of our greatest blessings.
+            We can't wait to celebrate with you!
+        </p>
     </section>
 
     <footer>
