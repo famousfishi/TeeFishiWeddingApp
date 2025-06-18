@@ -1,0 +1,123 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oluwafisayomi & Tayelolu - ForeverAndTheDayAfter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background: #fff8f0;
+            color: #333;
+        }
+        header {
+            background: #b48b7d;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        header h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3rem;
+            margin: 0;
+        }
+        nav {
+            background: #f4e3d7;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: #b48b7d;
+            font-weight: bold;
+        }
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        h2 {
+            color: #b48b7d;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #b48b7d;
+            color: white;
+            font-family: 'Great Vibes', cursive;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Oluwafisayomi & Tayelolu</h1>
+        <p>ForeverAndTheDayAfter</p>
+    </header>
+    <nav>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('story')">Our Story</a>
+        <a href="#" onclick="showSection('photos')">Gallery</a>
+        <a href="#" onclick="showSection('journey')">Journey Ahead</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome</h2>
+        <p>We’re so excited to celebrate our love with you. Mark your calendars for September 20 and 21, 2025!</p>
+    </section>
+
+    <section id="story" class="hidden">
+        <h2>How We Met</h2>
+        <p>Our story began with a spark and has grown into a flame that never fades. We met in the most unexpected way, yet it feels like destiny brought us together...</p>
+    </section>
+
+    <section id="photos" class="hidden">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/200x200?text=Love1" alt="Love 1">
+            <img src="https://via.placeholder.com/200x200?text=Love2" alt="Love 2">
+            <img src="https://via.placeholder.com/200x200?text=Love3" alt="Love 3">
+            <img src="https://via.placeholder.com/200x200?text=Love4" alt="Love 4">
+        </div>
+    </section>
+
+    <section id="journey" class="hidden">
+        <h2>Our Journey Ahead</h2>
+        <p>As we step into this new chapter, we are full of dreams and faith. From building a home filled with laughter to traveling the world hand-in-hand, our journey is just beginning...</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Oluwafisayomi & Tayelolu | ForeverAndTheDayAfter</p>
+    </footer>
+
+    <script>
+        function showSection(id) {
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('hidden');
+            });
+            document.getElementById(id).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
